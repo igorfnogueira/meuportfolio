@@ -1,0 +1,36 @@
+:root {
+  --primarycolor: #212A3E;
+  --seconderycoloer:#394867;
+  --greycolor:#9BA4B5;
+  --backgroudcolor:#F1F6F9;
+
+}
+header{
+  background-color: var(--primarycolor);  
+}
+
+body{
+  background-color: var(--backgroudcolor);
+}
+a{
+  text-decoration:none;
+}
+
+.h40{
+  height: 50px;
+}
+
+#profile{
+  
+  border-radius: 50%;
+  border-style: solid;
+}
+
+.row{
+  justify-content: center;
+}
+
+/* div{
+  border-style: solid;
+} */
+
