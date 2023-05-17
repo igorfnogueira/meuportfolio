@@ -1,105 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="\node_modules\bootstrap\dist\css\bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="custom.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Portfólio</title>
-  </head>
-  <body>
-    <header>
-      <div class="container-fluid">
-        <div class="row h40 pt-2">
-          <div class="col-4 text-start col-sm-2 col-xl-1 " > <a style="color: azure;" href="">Início</a></div>
-          <div class="col-4 text-end col-sm-2 offset-sm-6 col-xl-1 offset-xl-9"><a style="color: azure;"" href="">Projetos</a></div>
-          <div class="col-4 text-start col-sm-2 col-xl-1 "><a style="color: azure;" href="">Informações</a></div>
-        </div>
+  <link rel="stylesheet" href="\node_modules\bootstrap\dist\css\bootstrap.min.css" />
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="custom.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Portfólio</title>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="row h40 pt-2">
+        <div class="col-4 text-start col-sm-2 col-xl-1 "> <a style="color: azure;" href="#bio">Início</a></div>
+        <div class="col-4 text-end col-sm-2 offset-sm-6 col-xl-1 offset-xl-9"><a style="color: azure;"" href="
+            #projetos">Projetos</a></div>
+        <div class="col-4 text-start col-sm-2 col-xl-1 "><a  onclick="trocarCor()" style="color: azure;" href="">Informações</a></div>
       </div>
-    </header>
-    <div class="container text-center p-5" id="bio" >
-      <h2>Igor Fonseca Nogueira</h2>
-      <span onclick="trocarFoto()" class="material-symbols-outlined">navigate_before</span> 
-      <img class="img-fluid col-9 col-sm-8 col-md-7 col-xl-5" id="profile" src="/img/igor.png">
-      <span onclick="trocarFoto()" class="material-symbols-outlined"> navigate_next </span>
-      <h4>Graduado em Ciência e Tecnologia pela UNIFESP, tenho experiência na área de infraestrutura, onde trabalhei como Analista de Sistemas, tenho conhecimento em inglês avançado, também possuo um curso técnico de manutenção de computadores e faço alguns serviços como MEI. <br> Atualmente estou estudando HTML, CSS e Javascript para entrar na área de programação. Este é o meu portfólio, meu primeiro site criado do zero, com meu conhecimento e muita pesquisa. Todos futuros projetos que eu participar estarão neste portfólio, no caso de projetos pessoais também disponibilizarei o código no Github.</h4>
+    </div>
+  </header>
+  <div class="container text-center p-5" id="bio">
+    <h2 class="pt-5">Igor Fonseca Nogueira</h2>
+    <span onclick="trocarFoto()" class="material-symbols-outlined">navigate_before</span>
+    <img class="img-fluid col-9 col-sm-8 col-md-7 col-xl-5" id="profile" src="/img/igor.png">
+    <span onclick="trocarFoto()" class="material-symbols-outlined"> navigate_next </span>
+    <h4>Graduado em Ciência e Tecnologia pela UNIFESP, tenho experiência na área de infraestrutura, onde trabalhei como
+      Analista de Sistemas, tenho conhecimento em inglês avançado, também possuo um curso técnico de manutenção de
+      computadores e faço alguns serviços como MEI. <br> Atualmente estou estudando HTML, CSS e Javascript para entrar
+      na área de programação. Este é o meu portfólio, meu primeiro site criado do zero, com meu conhecimento e muita
+      pesquisa. Todos futuros projetos que eu participar estarão neste portfólio, no caso de projetos pessoais também
+      disponibilizarei o código no Github.</h4>
 
+  </div>
+
+  <div class="container text-center p-5" id="projetos">
+    <h1>Projetos</h1>
+    <div class="row pt-5">
+      <h2>App Lanterta Reactive Native</h2>
+      <img #id="imglanterna" class="img-fluid col-10 col-md-7 col-lg-5 col-xl-4" src="/img/lanterna.png">
+      <div class="col-md-5 cold-lg-4 col-xl-4 text-start pt-5">
+        <p>
+          Projeto de um App em REACT Native, capaz de ativar a lanterna do celular no botão do App ou balançando o
+          celular.
+        <ul>
+          Conteúdo estudado:
+          <li>react-native-shake e react-native-torch</li>
+          <li>Libs </li>
+          <li>Toggle dark/white</li>
+          <li>StyleSheet</li>
+          <li>Hook useState</li>
+          <li>Hook useEffect</li>
+          <li>Add Listener to RNShake</li>
+          <li>Lifecicly ReactJS</li>
+        </ul>
+        <a href="https://github.com/igorfnogueira/DIO-flashlightApp" target="_blank">Repositório Github</a>
+        </p>
+      </div>
     </div>
 
-    <div class="container text-center p-5">
-      <h1>Projetos</h1>
-      <div class="row pt-5">
-        <h2>App Lanterta Reactive Native</h2>
-          <img #id="imglanterna" class="img-fluid col-10 col-md-7 col-lg-5 col-xl-4"  src="/img/lanterna.png">
-          <div class="col-md-5 cold-lg-4 col-xl-4 text-start pt-5">
-            <p>
-              Projeto de um App em REACT Native, capaz de ativar a lanterna do celular no botão do App ou balançando o celular. 
-              <ul>
-                Conteúdo estudado:
-                <li>react-native-shake e react-native-torch</li>
-                <li>Libs </li>
-                <li>Toggle dark/white</li>
-                <li>StyleSheet</li>
-                <li>Hook useState</li>
-                <li>Hook useEffect</li>
-                <li>Add Listener to RNShake</li>
-                <li>Lifecicly ReactJS</li>
-              </ul>
-              <a href="https://github.com/igorfnogueira/DIO-flashlightApp" target="_blank" >Repositório Github</a>
-            </p> 
-          </div> 
-        </div>  
+
+    <div class="row pt-5">
+      <h2>Perfil Github Reactive Native</h2>
+      <img #id="imgperfilRN" class="img-fluid col-10 col-md-7 col-lg-5 col-xl-4" src="/img/perfilRN.png">
+      <div class="col-md-5 cold-lg-4 col-xl-4 text-start pt-5">
+        <p>
+
+          Projeto de um App em REACT Native, aprendendo a estilizar o aplicativo baseado no modelo de perfil do Github.
+        <ul>
+          Conteúdo estudado:
+
+          <li>View</li>
+          <li>Text</li>
+          <li>SafeAreaView</li>
+          <li>Image</li>
+          <li>Flex-box</li>
+          <li>Style (StyleSheet)</li>
+          <li>Pressable</li>
+          <li>Linking API</li>
+          <li>Add código nativo no AndroidManifest.xml para abrir link</li>
+        </ul>
+        <a href="https://github.com/igorfnogueira/dioRN" target="_blank">Repositório Github</a>
+
+        </p>
+      </div>
+    </div>
+  </div>
 
 
-      <div class="row pt-5">
-        <h2>Perfil Github Reactive Native</h2>
-        <img #id="imgperfilRN" class="img-fluid col-10 col-md-7 col-lg-5 col-xl-4"  src="/img/perfilRN.png">
-        <div class="col-md-5 cold-lg-4 col-xl-4 text-start pt-5">
-          <p>
-          
-            Projeto de um App em REACT Native, aprendendo a estilizar o aplicativo baseado no modelo de perfil do Github. 
-            <ul>
-              Conteúdo estudado:
+  <script src="\node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+  <footer class="container-fluid" id="foot">
+    <div class="row justify-content-end p-2">
+      <a class="col-6 text-center" href="https://github.com/igorfnogueira" target="_blank"><i class="fa fa-github " style="font-size:25px;color:white"></i></a>
+      <a class="col-6 text-center" href="" target="_blank"><span class="material-symbols-outlined col-6 text-center" id="emailicon">
+        mail</span></a>
+    </div>
 
-              <li>View</li>
-              <li>Text</li>
-              <li>SafeAreaView</li>
-              <li>Image</li>
-              <li>Flex-box</li>
-              <li>Style (StyleSheet)</li>
-              <li>Pressable</li>
-              <li>Linking API</li>
-              <li>Add código nativo no AndroidManifest.xml para abrir link</li>
-              </ul>
-              <a href="https://github.com/igorfnogueira/dioRN" target="_blank" >Repositório Github</a>
-        
-          </p>
-        </div>
-     </div>
-    </div> 
-    
-      
-      
-  
-   
-    <!-- <div class="text-center text-md-start text-xl-end">
-      Lorem ipsum  dolor sit amet consectetur adipisicing elit. Fuga eum
-      laudantium modi ipsam dolor, cum tempore sit sequi necessitatibus quos
-      exercitationem repellat. Sed vitae molestiae et inventore. Harum totam
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eum
-      laudantium modi ipsam dolor, cum tempore sit sequi necessitatibus quos
-      exercitationem repellat. Sed vitae molestiae et inventore. Harum totam
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eum
-      laudantium modi ipsam dolor, cum tempore sit sequi necessitatibus quos
-      exercitationem repellat. Sed vitae molestiae et inventore. Harum totam
-    </div> -->
-    <script src="\node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
-  </body>
+  </footer>
+</body>
+
 </html>
