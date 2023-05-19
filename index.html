@@ -19,20 +19,27 @@
 <body>
   <header>
     <div class="container-fluid">
-      <div class="row h40 pt-2">
-        <div class="col-4 text-start col-sm-2 col-xl-1 "> <a style="color: azure;" href="#bio">Início</a></div>
-        <div class="col-4 text-end col-sm-2 offset-sm-6 col-xl-1 offset-xl-9"><a style="color: azure;"" href="
-            #projetos">Projetos</a></div>
-        <div class="col-4 text-start col-sm-2 col-xl-1 "><a  onclick="trocarCor()" style="color: azure;" href="">Informações</a></div>
+      <div class="row h40 pt-2"><div>
+        <div id="inicioBtn"><a style="color: azure;" href="#bio">Início</a></div>
+        <div  id="headerBtn">
+          <div><a style="color: azure;" href="#projetos">Projetos</a></div>
+          <div class="ps-3 pt-1">
+              <label class="switch ">
+                <input onclick="trocarCor()" type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+        </div>
       </div>
     </div>
   </header>
   <div class="container text-center p-5" id="bio">
-    <h2 class="pt-5">Igor Fonseca Nogueira</h2>
+    <h2 class="pt-5 pb-3">Igor Fonseca Nogueira</h2>
+    
     <span onclick="trocarFoto()" class="material-symbols-outlined">navigate_before</span>
-    <img class="img-fluid col-9 col-sm-8 col-md-7 col-xl-5" id="profile" src="/img/igor.png">
-    <span onclick="trocarFoto()" class="material-symbols-outlined"> navigate_next </span>
-    <h4>Graduado em Ciência e Tecnologia pela UNIFESP, tenho experiência na área de infraestrutura, onde trabalhei como
+    <img class="img-fluid col-9 col-sm-8 col-md-7 col-xl-5 " id="profile" src="/img/igor.png">
+    <span onclick="trocarFoto()" class="material-symbols-outlined "> navigate_next </span>
+    <h4 class="pt-5">Graduado em Ciência e Tecnologia pela UNIFESP, tenho experiência na área de infraestrutura, onde trabalhei como
       Analista de Sistemas, tenho conhecimento em inglês avançado, também possuo um curso técnico de manutenção de
       computadores e faço alguns serviços como MEI. <br> Atualmente estou estudando HTML, CSS e Javascript para entrar
       na área de programação. Este é o meu portfólio, meu primeiro site criado do zero, com meu conhecimento e muita
@@ -99,7 +106,7 @@
   <footer class="container-fluid" id="foot">
     <div class="row justify-content-end p-2">
       <a class="col-6 text-center" href="https://github.com/igorfnogueira" target="_blank"><i class="fa fa-github " style="font-size:25px;color:white"></i></a>
-      <a class="col-6 text-center" href="" target="_blank"><span class="material-symbols-outlined col-6 text-center" id="emailicon">
+      <a class="col-6 text-center" href="mailto:igor.fn20@gmail.com" target="_blank"><span class="material-symbols-outlined col-6 text-center" id="emailicon">
         mail</span></a>
     </div>
 
